@@ -3,3 +3,165 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/***Buttons***/
+.hb_btn {
+  border-radius: 20px;
+  padding: 7px 1px;
+  color: #fff;
+  border: none;
+}
+
+.hb_btn a {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 5px 8px;
+  margin: 1px;
+}
+
+.hb_btn-red-link {
+  background-color: #cd3d0f;
+}
+
+.hb_btn-grey-link {
+  background-color: #3a3a3a;
+}
+.hb_btn-blue-link {
+  background-color: #2760e5;
+}
+
+.hb_btn-link {
+  border: 2px solid rgba(255, 255, 255, 0);
+  transition: all .3s;;
+}
+
+.hb_btn-red {
+  background-color: #cd3d0f;
+}
+
+.hb_btn-grey{
+  background-color: #3a3a3a;
+}
+
+.hb_btn-blue{
+  background-color: #2760e5;
+}
+
+.hb_btn-link:hover {
+  border: 2px solid #fff;
+}
+
+/****************
+    HEADER
+****************/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:#fff;
+  z-index: 999;
+}
+
+/***Logo Sony***/
+.hb_logo-sony {
+  background-color: #000;
+}
+
+.hb_logo-sony img {
+  width: 80px;
+}
+/***Navigation***/
+.hb_link-arrow {
+  position: relative;
+}
+
+.hb_link-arrow:after {
+  content: url('../img/chevron-down-solid.svg');
+  position: absolute;
+}
+
+.hb_lens {
+  width: 25px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+/****************
+    MAIN
+****************/
+/***Jumbo***/
+.jumbo-1 {
+  height: 600px;
+}
+
+.jumbo h2 {
+  font-size: 38px;
+}
+
+#jumbo-1 {
+  background: url('../img/jumbo-bg.png') no-repeat center;
+  background-size: cover;
+  margin-top: 110px;
+}
+
+.jumbo img {
+  width: 250px;
+}
+
+/***Games***/
+.hb_games-box {
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.hb_games-box:hover {
+  transform: translateY(-10px);
+}
+
+.hb_games-box.active {
+  border: 2px solid #006dcc;
+}
+
+.hb_games-box img {
+  border-radius: 20px;
+  padding: 2px;
+}
+
+/***Playstatio 5***/
+.hb_accessori-box {
+  height: 150px;
+  cursor: pointer;
+}
+
+.hb_accessori-box:hover {
+  opacity: .5;
+}
+
+.hb_accessori-box:first-of-type {
+  border-bottom: 2px solid #0d79d0;
+}
+
+.hb_accessori img{
+  width: 100px;
+}
+
+/***Jumbo 2***/
+#jumbo-2 {
+  background: url('../img/it-takes-two-hero-banner-desktop.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+
+/****************
+    FOOTER
+****************/
