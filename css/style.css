@@ -140,10 +140,11 @@ header {
 .hb_accessori-box {
   height: 150px;
   cursor: pointer;
+  opacity: .5;
 }
 
 .hb_accessori-box:hover {
-  opacity: .5;
+  opacity: 1;
 }
 
 .hb_accessori-box:first-of-type {
