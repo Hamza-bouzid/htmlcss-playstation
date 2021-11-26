@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -33,29 +37,43 @@ img {
 .hb_btn-grey-link {
   background-color: #3a3a3a;
 }
+
 .hb_btn-blue-link {
   background-color: #2760e5;
 }
 
+.hb_btn-trs-link {
+  background-color: #d9dadc;
+}
+
 .hb_btn-link {
   border: 2px solid rgba(255, 255, 255, 0);
-  transition: all .3s;;
+  transition: all 0.3s;
 }
 
 .hb_btn-red {
   background-color: #cd3d0f;
 }
 
-.hb_btn-grey{
+.hb_btn-grey {
   background-color: #3a3a3a;
 }
 
-.hb_btn-blue{
+.hb_btn-blue {
   background-color: #2760e5;
+}
+
+.hb_btn-trs {
+  background-color: #d9dadc;
+}
+
+.hb_btn-trs a {
+  color: #2760e5;
 }
 
 .hb_btn-link:hover {
   border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /****************
@@ -66,8 +84,9 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color:#fff;
+  background-color: #fff;
   z-index: 999;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /***Logo Sony***/
@@ -79,19 +98,97 @@ header {
   width: 80px;
 }
 /***Navigation***/
-.hb_link-arrow {
-  position: relative;
-}
-
-.hb_link-arrow:after {
-  content: url('../img/chevron-down-solid.svg');
-  position: absolute;
-}
-
 .hb_lens {
   width: 25px;
   cursor: pointer;
   object-fit: contain;
+}
+
+.hb_lens:hover {
+  filter: invert(30%) sepia(87%) saturate(1324%) hue-rotate(185deg) brightness(101%) contrast(93%);
+}
+
+nav .nav-link {
+  color: #000 !important;
+}
+
+nav .nav-link:hover {
+  color: #0d79d0 !important;
+}
+
+nav .navbar-nav .nav-link.show {
+  color: #0d79d0 !important;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.nav-link:hover .hb_chevron-down {
+  color: #0d79d0;
+}
+
+.hb_chevron-down,
+.hb_chevron-up {
+  color: grey;
+  font-size: 12px;
+}
+
+.hb_chevron-up {
+  display: none;
+}
+
+.navbar-nav .show .hb_chevron-down {
+  display: none;
+}
+
+.navbar-nav .show .hb_chevron-up {
+  display: inline-block;
+  color: #0d79d0;
+}
+
+.dropdown-menu {
+  width: 100vw;
+  position: absolute;
+  border: none;
+}
+
+.dropdown-menu[data-bs-popper] {
+  margin-top: -10px;
+}
+
+.hb_nav-img-console {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.hb_nav-img-console:hover {
+  -webkit-box-shadow: -1px 1px 15px 3px rgba(0, 0, 0, 0.63);
+  box-shadow: -1px 1px 15px 3px rgba(0, 0, 0, 0.63);
+}
+
+.hb_nav-img-console img {
+  width: 60px;
+  height: 60px;
+}
+
+.hb_nav-link-console li {
+  list-style: disc;
+  color: #0d79d0;
+  margin: 0px 15px;
+}
+
+.hb_nav-link-console a{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hb_nav-link-console a:hover {
+  color: #0d79d0;
 }
 
 /****************
@@ -107,7 +204,7 @@ header {
 }
 
 #jumbo-1 {
-  background: url('../img/jumbo-bg.png') no-repeat center;
+  background: url("../img/jumbo-bg.png") no-repeat center;
   background-size: cover;
   margin-top: 110px;
 }
@@ -120,7 +217,7 @@ header {
 .hb_games-box {
   border-radius: 20px;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .hb_games-box:hover {
@@ -140,7 +237,7 @@ header {
 .hb_accessori-box {
   height: 150px;
   cursor: pointer;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .hb_accessori-box:hover {
@@ -149,20 +246,50 @@ header {
 
 .hb_accessori-box:first-of-type {
   border-bottom: 2px solid #0d79d0;
+  opacity: 1;
 }
 
-.hb_accessori img{
+.hb_accessori img {
   width: 100px;
 }
 
 /***Jumbo 2***/
 #jumbo-2 {
-  background: url('../img/it-takes-two-hero-banner-desktop.jpg') no-repeat center;
+  background: url("../img/it-takes-two-hero-banner-desktop.jpg") no-repeat center;
   background-size: cover;
   padding-top: 100px;
 }
 
+/***Nuove Uscite***/
+#nuove-uscite {
+  background-color: #1f1f1f;
+}
+
+#nuove-uscite img {
+  border-radius: 20px;
+}
+
+/***Jumbo 3***/
+#jumbo-3 {
+  background-color: #bebcbb;
+}
+
+#jumbo-3 .hb_plus-img {
+  width: 300px;
+}
 
 /****************
     FOOTER
 ****************/
+
+
+
+/****************
+    MEDIA QUERIES
+****************/
+@media screen and (min-width: 992px) {
+  /***Playstation 4***/
+  .hb_play4-p {
+    height: 50px;
+  }  
+}
