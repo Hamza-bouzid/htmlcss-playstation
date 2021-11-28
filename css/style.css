@@ -313,8 +313,23 @@ footer {
   background-color: #00439c;
 }
 
-footer img {
+.hb_footer-img {
   width: 100px;
+  object-fit: none;
+}
+
+footer ul li {
+  list-style: none;
+  margin: 8px 0px;
+}
+
+footer li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer li a:hover {
+  color: #fff;
 }
 
 
