@@ -85,17 +85,16 @@ img {
 
 .hb_btn-link:hover {
   border: 2px solid #fff;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .hb_btn-red-link:hover,
-.hb_btn-white-link:hover
- {
+.hb_btn-white-link:hover {
   border: 2px solid #000;
 }
 
-.hb_btn-red:hover{
-  opacity: .9;
+.hb_btn-red:hover {
+  opacity: 0.9;
 }
 
 /****************
@@ -203,7 +202,7 @@ nav .navbar-nav .nav-link.show {
   margin: 0px 15px;
 }
 
-.hb_nav-link-console a{
+.hb_nav-link-console a {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -244,6 +243,8 @@ nav .navbar-nav .nav-link.show {
 
 .hb_games-box:hover {
   transform: translateY(-10px);
+  -webkit-box-shadow: 0px 24px 24px -5px rgba(0,0,0,0.5); 
+box-shadow: 0px 24px 24px -5px rgba(0,0,0,0.5);
 }
 
 .hb_games-box.active {
@@ -260,6 +261,7 @@ nav .navbar-nav .nav-link.show {
   height: 150px;
   cursor: pointer;
   opacity: 0.5;
+  transition: all 0.3s;
 }
 
 .hb_accessori-box:hover {
@@ -289,6 +291,16 @@ nav .navbar-nav .nav-link.show {
 
 #nuove-uscite img {
   border-radius: 20px;
+}
+
+.hb_new-release {
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.hb_new-release:hover {
+  cursor: pointer;
+  transform: scale(1.03);
 }
 
 /***Jumbo 3***/
@@ -332,7 +344,6 @@ footer li a:hover {
   color: #fff;
 }
 
-
 /****************
     MEDIA QUERIES
 ****************/
@@ -340,5 +351,10 @@ footer li a:hover {
   /***Playstation 4***/
   .hb_play4-p {
     height: 50px;
-  }  
+  }
+}
+
+
+.hb_icon-menu {
+  width: 40px;
 }
